@@ -1,5 +1,15 @@
+import HeroSection from "@/components/hero/page";
+import Preloader from "@/components/preloader/page";
+
 const Home = () => {
-  return <main>Home</main>;
+  return (
+    <>
+      <Preloader />
+      <main>
+        <HeroSection />
+      </main>
+    </>
+  );
 };
 
 export default Home;
