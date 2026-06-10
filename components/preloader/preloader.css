@@ -5,7 +5,7 @@
   width: 100vw;
   font-family: var(--font-loader);
   clip-path: inset(0 0 0%);
-  z-index: 3;
+  z-index: 4;
 }
 
 .content-container {

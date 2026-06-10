@@ -5,10 +5,9 @@ import "./preloader.css";
 import gsap from "gsap";
 import { useRef } from "react";
 import { useGSAP } from "@gsap/react";
-import SplitText from "gsap/SplitText";
 import { CustomEase } from "gsap/CustomEase";
 
-gsap.registerPlugin(SplitText, CustomEase);
+gsap.registerPlugin(CustomEase);
 
 CustomEase.create("hop", "0.9, 0, 0.1, 1");
 CustomEase.create("Quart.easeInOut", "0.770, 0, 0.175, 1");

@@ -4,9 +4,11 @@ import localFont from "next/font/local";
 import "./globals.css";
 import SmoothScroll from "@/providers/smooth-scroll";
 import { cn } from "@/lib/utils";
+import Navbar from "@/components/navbar/page";
 
 const inter = Inter({
   variable: "--font-inter",
+  weight: ["400", "500", "600", "700"],
   subsets: ["latin"],
 });
 
@@ -38,8 +40,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={cn(inter.variable, hatton.variable, "h-full antialiased")}>
-      <body className="min-h-full flex flex-col">
-        <SmoothScroll>{children}</SmoothScroll>
+      <body className="relative min-h-full flex flex-col">
+        <SmoothScroll>
+          <Navbar />
+          {children}
+        </SmoothScroll>
       </body>
     </html>
   );

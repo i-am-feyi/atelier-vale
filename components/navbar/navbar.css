@@ -1,0 +1,31 @@
+.navbar {
+  position: fixed;
+  z-index: 2;
+  color: #fff;
+  padding: 1.5rem 1rem;
+  width: 100%;
+}
+
+.nav-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 0.875rem;
+  overflow: hidden;
+}
+
+.nav-wrapper > div,
+.logo,
+.logo-wrapper {
+  overflow: hidden;
+}
+
+@media (max-width: 1000px) {
+  .navbar {
+    padding: 1rem;
+  }
+}
