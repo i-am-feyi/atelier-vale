@@ -4,7 +4,7 @@ import Preloader from "@/components/preloader/page";
 const Home = () => {
   return (
     <>
-      <Preloader />
+      {/* <Preloader /> */}
       <main>
         <HeroSection />
       </main>

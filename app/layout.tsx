@@ -17,6 +17,11 @@ const hatton = localFont({
       weight: "500",
       style: "normal",
     },
+    {
+      path: "../fonts/PPHatton-Bold.otf",
+      weight: "700",
+      style: "normal",
+    },
   ],
   variable: "--font-hatton",
 });
